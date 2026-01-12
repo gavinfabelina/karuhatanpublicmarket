@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karuhatan Public Market</title>
+    <link href="assets/img/KPM Logo.png" rel="icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/tenancy-inquiry-form-style.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="preloaderBg" id="preloader">
+        <div class="preloader"></div>
+        <div class="preloader2"></div>
+    </div>
+
+    <div class="container-fluid ps-md-0" style="background-image: url('assets/img/gradient-bg-sm.png'); background-position: center; background-size:cover; background-repeat:no-repeat">
+      <div class="row g-0">
+        <div class="d-none d-md-flex col-md-4 bg-image" style="background-image: url('assets/img/get-started-bg.png');"></div>
+        <div class="container col-md-8" style="height: 100vh">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              
+              <a href="home.html">
+                <img class="mb-4 mt-5" src="assets/img/Karuhatan Public Market Logo.png" alt="Logo" style="max-width: 250px;">
+              </a>
+              <h3 class="display-4 switzer-bold-text col-12 mb-5 text-center animate-on-scroll fadeInUp-trigger">Tenancy Inquiry Form</h3>
+
+              <div class="col-10 mx-auto mb-5">
+                <div class="progress_container">
+                  <div class="progress-line" id="progress"></div>
+                  <div class="circle active"><span class="step-number">1</span></div>
+                  <div class="circle"><span class="step-number">2</span></div>
+                  <div class="circle"><span class="step-number">3</span></div>
+                </div>
+              </div>
+
+              <form method="POST" class="d-flex flex-column" id="tenancyInquiryForm" style="height: 50vh" onsubmit="return validateTenancyInquiryForm()">
+                <div class="form-step step-1 active">
+                  <h3 class="display-6 switzer-bold-text text-left animate-on-scroll fadeInUp-trigger">Welcome! First Things First...</h3>
+                  <p class="display-sm switzer-medium-text text-left mb-5 animate-on-scroll fadeInUp-trigger">Let's start by getting your name.</p>
+                  <div class="form-floating mb-3">
+                    <input name="firstName" type="text" class="form-control form-input-style" id="floatingFirstName" pattern="[\sA-Za-z]+" title="Please enter a valid first name." placeholder="" required autocomplete="off">
+                    <label for="floatingFirstName" class="form-label-style">First Name</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input name="lastName" type="text" class="form-control form-input-style" id="floatingLastName" pattern="[\sA-Za-z]+" title="Please enter a valid last name." placeholder="" required autocomplete="off">
+                    <label for="floatingLastName" class="form-label-style">Last Name</label>
+                  </div>
+                </div>
+              
+                <div class="form-step step-2">
+                  <h3 class="display-6 switzer-bold-text text-left animate-on-scroll fadeInUp-trigger">Great! Now, How Can We Reach You?</h3>
+                  <p class="display-sm switzer-medium-text text-left mb-5 animate-on-scroll fadeInUp-trigger">We need your contact details to stay in touch.</p>
+                  <div class="form-floating mb-3">
+                    <input name="phoneNumber" type="tel" class="form-control form-input-style" id="floatingPhoneNumber" pattern="09[0-9]{9}" title="Please enter a valid 11-digit phone number." placeholder="" required autocomplete="off">
+                    <label for="floatingPhoneNumber" class="form-label-style">Phone Number</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input name="emailAddress" type="text" class="form-control form-input-style" id="emailAddress" pattern="/^[^\.\s][\w\-\.{2,}]+@([\w-]+\.)+[\w-]{2,}$/gm" title="Please enter a valid email address." placeholder="" required autocomplete="off">
+                    <label for="emailAddress" class="form-label-style">Email Address</label>
+                  </div>
+                </div>
+              
+                <div class="form-step step-3">
+                  <h3 class="display-6 switzer-bold-text text-left animate-on-scroll fadeInUp-trigger">Almost There! What Do You Need?</h3>
+                  <p class="display-sm switzer-medium-text text-left mb-5 animate-on-scroll fadeInUp-trigger">Share a bit about what you're looking for.</p>
+                  <div class="form-floating mb-3">
+                    <select name="stallCategory" class="form-select form-input-style" id="floatingStallCategory" aria-label="Stall Category" style="height: 4rem;" required>
+                        <option value="" selected>Select Stall Category</option>
+                        <option value="Canteen">Canteen</option>
+                        <option value="Clothing">Clothing</option>
+                        <option value="Coconut">Coconut</option>
+                        <option value="Condiments">Condiments</option>
+                        <option value="Fruits">Fruits</option>
+                        <option value="Grocery">Grocery</option>
+                        <option value="Meat">Meat</option>
+                        <option value="Pharmacy">Pharmacy</option>
+                        <option value="Poultry">Poultry</option>
+                        <option value="Rice">Rice</option>
+                        <option value="SariSari">Sari-Sari</option>
+                        <option value="Toys">Toys</option>
+                        <option value="Vegetables">Vegetables</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <label for="floatingStallCategory" class="form-label-style">What type of stall are you interested in?</label>
+                  </div>
+                  <div class="form-floating mb-3 d-grid">
+                    <textarea name="inquiryAndQuestion" class="form-control form-input-style" id="floatingTextBox" style="height: auto; min-height: 150px; resize: none" rows="8" maxlength="255"></textarea>
+                    <label for="floatingTextBox" class="form-label-style">Any specific requests or questions? (Optional)</label>
+                  </div>
+                </div>
+              
+                <div class="d-flex justify-content-between mt-auto">
+                  <button type="button" class="custom-col-slide-btn btn btn-lg btn-signup btn-login text-uppercase fw-bold animate-on-scroll fadeIn-trigger" id="prev" disabled>Back</button>
+                  <button type="button" class="custom-col-slide-btn btn btn-lg btn-signup btn-login text-uppercase fw-bold animate-on-scroll fadeIn-trigger" id="next">Next</button>
+                  <button type="submit" class="custom-col-slide-btn btn btn-lg btn-signup btn-login text-uppercase fw-bold d-none animate-on-scroll fadeIn-trigger" id="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/preloader.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const targetElements = document.querySelectorAll('.animate-on-scroll');
+        
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+                );
+            }
+        
+            function handleScroll() {
+                targetElements.forEach(function(element) {
+                    if (isElementInViewport(element)) {
+                        if (element.classList.contains('fadeInUp-trigger')) {
+                            element.classList.add('fadeInUp-animation');
+                        } else if (element.classList.contains('fadeIn-trigger')) {
+                            element.classList.add('fadeIn-animation');
+                        }
+                        element.classList.remove('animate-on-scroll');
+                    }
+                });
+            }
+
+            window.addEventListener('load', function() {
+                let preloader = document.getElementById("preloader");
+        
+                let preloaderCheckInterval = setInterval(function() {
+                    if (preloader.style.display === "none") {
+                        clearInterval(preloaderCheckInterval);
+                        window.addEventListener('scroll', handleScroll);
+                        handleScroll();
+                    }
+                }, 100);
+            });
+        });        
+    </script>
+</body>
+</html>

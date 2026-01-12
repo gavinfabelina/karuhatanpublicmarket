@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karuhatan Public Market</title>
+    <link href="assets/img/KPM Logo.png" rel="icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/home-style.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="preloaderBg" id="preloader">
+        <div class="preloader"></div>
+        <div class="preloader2"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="assets/img/Karuhatan Public Market Logo.png" alt="Karuhatan Public Market Logo" class="img-fluid" id="kpmLogo"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="#" onclick="window.location.reload(); return false;">Guide Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="updates.html">Updates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item" id="hidden-nav">
+                        <a class="nav-link nav-text" href="get-started.html">Get Started</a>
+                    </li>
+                    <li class="nav-item" id="hidden-nav">
+                        <a class="nav-link nav-text" href="log-in.html">Login</a>
+                    </li>
+                </ul>
+                <div class="d-flex" id="hidden-side-nav">
+                    <a href="get-started.html">
+                        <button class="btn nav-text ms-6">Get Started</button>
+                    </a>
+                    <a href="log-in.html">
+                        <button class="btn btn-signup ms-3">Login</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div lc-helper="background" class="container-fluid py-custom-hero d-flex justify-content-center" style="background-image: url('assets/img/hero-bg.png'); background-position: center; background-size:cover; background-repeat:no-repeat">
+        <div class="container-fluid py-5 text-center custom-my-5-welcome">
+            <h2 class="switzer-extrabold-text custom-display-7 animate-on-scroll fadeInUp-trigger">WELCOME</h2>
+            <p class="custom-display-5 hero-welcome-text animate-on-scroll fadeInUp-trigger">Discover fresh finds and local flavors.<br>Start exploring now!</p>
+            <div class="custom-white-space-bottom-lg"></div>
+        </div>
+    </div>
+
+    <div lc-helper="background" class="container-fluid py-5 d-flex justify-content-center" style="background-image: url('assets/img/gradient-bg-sm.png'); background-position: center; background-size:cover; background-repeat:no-repeat">
+        <div class="container-fluid px-4 custom-py-5 custom-my-5 custom-col-6 text-center">
+            <h2 class="display-3 switzer-bold-text py-whats-new animate-on-scroll fadeInUp-trigger">What's New</h2>
+            <p class="display-0 switzer-medium-text py-whats-new animate-on-scroll fadeInUp-trigger">Keep an eye on our website for the latest updates on what you will find at our public market, from programs to renovations to regulations and more.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a href="updates.html" class="btn-io switzer-semibold-text-white animate-on-scroll fadeIn-trigger" role="button">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <div lc-helper="background" class="container-fluid custom-py-6 d-flex justify-content-center" style="background-image: url('assets/img/veg-bg.png'); background-position: center; background-size:cover; background-repeat:no-repeat">
+        <div class="p-5 lc-block col-xxl-7 col-lg-8 col-12" style="background-color: white; border-radius: 12px;">
+            <div class="container py-1">
+                <div class="row flex-lg-row-reverse align-items-center">
+                    <div class="col-10 mx-auto col-sm-8 col-lg-6">
+                        <img src="assets/img/food.png" class="d-block mx-auto img-fluid" alt="" loading="lazy" id="food-pic">
+                    </div>
+                    <div class="col-lg-6 custom-text-center">
+                        <h2 class="display-3 switzer-bold-text animate-on-scroll fadeInUp-trigger">Local Vendors</h2>
+                        <p class="display-0 switzer-medium-text py-whats-new animate-on-scroll fadeInUp-trigger">The Karuhatan Public Market strives to cater local businesses and vendors that offers a unique array of essentials and goods.</p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-start">
+                            <a href="#" onclick="window.location.reload(); return false;" class="btn-io switzer-semibold-text-white animate-on-scroll fadeIn-trigger custom-mx-auto" role="button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div lc-helper="background" class="container-fluid justify-content-center" style="background-image: url('assets/img/gradient-bg-footer.png'); background-position: center; background-size:cover; background-repeat:no-repeat">
+
+        <div class="container-fluid py-5 d-flex justify-content-center">
+            <div class="container-fluid px-4 custom-pt-5 custom-mt-5 custom-col-6 text-center">
+                <h2 class="display-3 switzer-bold-text py-whats-new animate-on-scroll fadeInUp-trigger">Our Public Market</h2>
+                <p class="display-0 switzer-medium-text py-whats-new animate-on-scroll fadeInUp-trigger">From seasonal produce to much-beloved delicacies, from staples to household goods, our market features a variety of stalls that offers something for every taste. </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <a href="about-us.html" class="btn-io switzer-semibold-text-white animate-on-scroll fadeIn-trigger" role="button">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="" alt="" class="slide-image" id="randomPhaseOneImage">
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="" alt="" class="slide-image" id="randomPhaseTwoImage">
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="" alt="" class="slide-image" id="randomPhaseThreeImage">
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="" alt="" class="slide-image" id="randomPhaseFourImage">
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+    
+        <main>
+            <h1 class="switzer-bold-text display-4 text-center">FAQ</h1>
+            <div class="topic">
+                <div class="open">
+                <h2 class="question display-0">1. What types of goods are available for sale?</h2>
+                <span class="faq-t"></span>
+                </div>
+                <p class="answer display-0">Our market offers a wide variety of goods, including poultry, meat, fish, boutique items (such as clothes and shoes), groceries, fruits, vegetables, frozen goods, pharmacy items, coconuts, rice, toys, and canteen fare, ensuring there's something for everyone.</p>
+            </div>
+            <div class="topic">
+                <div class="open">
+                <h2 class="question display-0">2. What are the operating hours?
+                </h2><span class="faq-t"></span>
+                </div>
+                <p class="answer display-0">The Karuhatan Public Market operates daily from Monday to Sunday. Office hours are from 5:00 AM to 6:00 PM, while the market remains open from 5:00 AM to 8:00 PM.</p>
+            </div>
+            <div class="topic">
+                <div class="open">
+                <h2 class="question display-0">3. Do vendors accept e-payment, or is it cash-only?
+                </h2><span class="faq-t"></span>
+                </div>
+                <p class="answer display-0">Vendors in the Karuhatan Public Market may vary in their payment methods, but many still primarily accept cash payments only. However, some vendors may also offer e-payment options through G-Cash, particularly in Phase 4, where all stalls are equipped with this payment method.
+                </p>
+            </div>
+        </main>
+
+        <div class="custom-white-space-bottom-md"></div>
+
+        <div lc-helper="background" class="container-fluid custom-py-6 d-flex justify-content-center">
+            <div class="p-5 mb-4 lc-block col-xxl-7 col-lg-8 col-12" style="background-image: url('assets/img/interested-tenancy-bg.png'); background-position: center; background-size:cover; background-repeat:no-repeat; border-radius: 12px;">
+                <div class="container-fluid custom-px-4 custom-col-9 text-center" id="footer-res">
+                    <h2 class="display-3 switzer-bold-text-white py-whats-new animate-on-scroll fadeInUp-trigger">Interested in tenancy?</h2>
+                    <p class="display-0 switzer-medium-text-white py-whats-new animate-on-scroll fadeInUp-trigger">Start to become a part of the Karuhatan Public Market by exploring tenancy opportunities today!<p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button onclick="goToGetStarted()" class="cssbuttons-io-button switzer-semibold-text animate-on-scroll fadeIn-trigger">
+                            Get Started
+                            <div class="icon">
+                              <svg
+                                height="24"
+                                width="24"
+                                viewBox="0 0 24 24"
+                                xmlns="htt p://www.w3.org/2000/svg"
+                              >
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                  fill="currentColor"
+                                ></path>
+                              </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-lg-start">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"></section>
+        
+        <section>
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                <a href="home.html">
+                    <img src="assets/img/Karuhatan Public Market Logo.png" alt="Karuhatan Public Market Logo" class="img-fluid mb-3 footer-logo">
+                </a>
+                <p class="switzer-medium-text">Join us at the Karuhatan Public Market, where every stall offers quality goods and every visit is an opportunity to discover something new.</p>
+              </div>
+      
+              <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-4">
+                <a href="#" onclick="window.location.reload(); return false;" style="text-decoration: none"><h6 class="footer-text mb-4">Guide Map</h6></a>
+                <a href="updates.html" style="text-decoration: none"><h6 class="footer-text mb-4">Updates</h6></a>
+                <a href="about-us.html" style="text-decoration: none"><h6 class="footer-text mb-4">About Us</h6></a>
+              </div>
+
+              <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-4">
+                <a href="log-in.html" style="text-decoration: none"><h6 class="footer-text mb-4">Log in</h6></a>
+                <a href="get-started.html" style="text-decoration: none"><h6 class="footer-text mb-4">Get Started</h6></a>
+              </div>
+      
+              <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4">
+                <a href="privacy-policy.html" style="text-decoration: none"><h6 class="footer-text mb-4">Privacy Policy</h6></a>
+                <a href="terms-and-conditions.html" style="text-decoration: none"><h6 class="footer-text mb-4">Terms and Conditions</h6></a>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-4 mx-auto mb-md-0 mb-4">
+                    <h6 class="footer-text mb-4">Contact Us</h6>
+                    <p class="switzer-medium-text"><i class="fa-solid fa-location-dot me-3 custom-icon-color"></i>#8 Karuhatan Road, Karuhatan Valenzuela City, 1441</p>
+                    <p class="switzer-medium-text"><i class="fas fa-envelope me-3 custom-icon-color"></i>Karuhatanmarketoffice<span class="d-inline-block text-nowrap">@gmail.com</span></p>
+                    <p class="switzer-medium-text"><i class="fa-brands fa-square-facebook me-3 custom-icon-color"></i><a href="https://www.facebook.com/profile.php?id=100064155489242" target="_blank">Visit Us in Facebook</a></p>
+                </div>
+
+                <div class="col-md-4 mx-auto mb-md-0 mb-4">
+                    <p class="switzer-medium-text"><i class="fas fa-phone me-3 custom-icon-color"></i>Phase 1: 09205470553</p>
+                    <p class="switzer-medium-text"><i class="fas fa-phone me-3 custom-icon-color"></i>Phase 2: 09694252876</p>
+                    <p class="switzer-medium-text"><i class="fas fa-phone me-3 custom-icon-color"></i>Phase 3: 09694252876</p>
+                    <p class="switzer-medium-text"><i class="fas fa-phone me-3 custom-icon-color"></i>Phase 4: (02) 734-07624 / Globe: 09063900633 / Smart: 09087610222</p>
+                </div>
+
+                <div class="col-md-4 mx-auto mb-md-0 mb-4">
+                    <p class="footer-text"><i class="fa-solid fa-business-time me-3 custom-icon-color"></i>Office Hours:<br><span class="switzer-medium-text">Monday-Sunday 5:00AM to 6:00PM</span></p>
+                    <p class="footer-text"><i class="fa-solid fa-clock me-3 custom-icon-color"></i>Market Hours:<br><span class="switzer-medium-text">Monday-Sunday 5:00AM to 8:00PM</span></p>
+                </div>
+            </div>
+          </div>
+        </section>        
+      
+        <div class="text-center switzer-semibold-text-white p-4" style="background-color: #283891;">© 2024 Copyright:
+          <a class="switzer-semibold-text-white" href="#" style="text-decoration: none">Karuhatan Public Market</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/home.js"></script>   
+    <script src="js/preloader.js"></script>
+    <script src="js/slider.js"></script>
+
+    <script>
+        const phaseOneImages = [
+            'assets/img/stalls/P1 ENTRY.jpg',
+            'assets/img/stalls/P1-1.jpg',
+            'assets/img/stalls/P1-2.jpg',
+            'assets/img/stalls/P1-3.jpg',
+            'assets/img/stalls/P1-4.jpg',
+            'assets/img/stalls/P1-5.jpg',
+            'assets/img/stalls/P1-6.jpg',
+            'assets/img/stalls/P1-7.jpg',
+            'assets/img/stalls/P1-8.jpg',
+            'assets/img/stalls/P1-9.jpg',
+            'assets/img/stalls/P1-10.jpg',
+            'assets/img/stalls/P1-11.jpg',
+            'assets/img/stalls/P1-12.jpg',
+            'assets/img/stalls/P1-13.jpg',
+            'assets/img/stalls/P1-14.jpg',
+            'assets/img/stalls/P1-15.jpg',
+        ];
+
+        const phaseTwoImages = [
+            'assets/img/stalls/P2 ENTRY L.jpg',
+            'assets/img/stalls/P2 ENTRY R.jpg',
+            'assets/img/stalls/P2-1.jpg',
+            'assets/img/stalls/P2-2.jpg',
+            'assets/img/stalls/P2-3.jpg',
+            'assets/img/stalls/P2-4.jpg',
+            'assets/img/stalls/P2-5.jpg',
+            'assets/img/stalls/P2-6.jpg',
+            'assets/img/stalls/P2-7.jpg',
+            'assets/img/stalls/P2-8.jpg',
+            'assets/img/stalls/P4-9.JPG',
+            'assets/img/stalls/P2-10.jpg',
+            'assets/img/stalls/P2-11.jpg',
+            'assets/img/stalls/P2-12.jpg',
+            'assets/img/stalls/P2-13.jpg',
+            'assets/img/stalls/P2-14.jpg',
+            'assets/img/stalls/P2-15.jpg',
+            'assets/img/stalls/P2-16.jpg',
+            'assets/img/stalls/P2-17.jpg',
+            'assets/img/stalls/P2-18.jpg',
+            'assets/img/stalls/P4-19.JPG',
+            'assets/img/stalls/P2-20.jpg',
+            'assets/img/stalls/P2-21.jpg',
+            'assets/img/stalls/P2-22.jpg',
+            'assets/img/stalls/P2-23.jpg',
+            'assets/img/stalls/P2-24.jpg',
+
+
+            'assets/img/stalls/P2-27.jpg',
+            'assets/img/stalls/P2-28.jpg',
+            'assets/img/stalls/P2-29.jpg',
+            'assets/img/stalls/P2-30.jpg',
+            'assets/img/stalls/P2-31.jpg',
+            'assets/img/stalls/P2-32.jpg',
+            'assets/img/stalls/P2-33.jpg',
+            'assets/img/stalls/P2-34.jpg',
+            'assets/img/stalls/P2-35.jpg',
+            'assets/img/stalls/P2-36.jpg',
+            'assets/img/stalls/P2-37.jpg',
+            'assets/img/stalls/P2-38.jpg',
+            'assets/img/stalls/P2-39.jpg',    
+        ];
+
+        const phaseThreeImages = [
+            'assets/img/stalls/P3 ENTRY.jpg',
+            'assets/img/stalls/P3-1.JPG',
+            'assets/img/stalls/P3-2.JPG',
+            'assets/img/stalls/P3-3.JPG',
+            'assets/img/stalls/P3-4.JPG',
+            'assets/img/stalls/P3-5.JPG',
+            'assets/img/stalls/P3-6.JPG',
+            'assets/img/stalls/P3-7.JPG',
+            'assets/img/stalls/P3-8.JPG',
+            'assets/img/stalls/P3-9.JPG',
+            'assets/img/stalls/P3-10.JPG',
+            'assets/img/stalls/P3-11.JPG',
+            'assets/img/stalls/P3-12.JPG',
+            'assets/img/stalls/P3-13.JPG',
+            'assets/img/stalls/P3-14.JPG',
+            'assets/img/stalls/P3-15.JPG',
+            'assets/img/stalls/P3-16.JPG',
+            'assets/img/stalls/P3-18.JPG',
+            'assets/img/stalls/P3-19.JPG',
+            'assets/img/stalls/P3-20.JPG',
+            'assets/img/stalls/P3-21.JPG',
+            'assets/img/stalls/P3-22.JPG',
+            'assets/img/stalls/P3-23.JPG',
+            'assets/img/stalls/P3-24.JPG',
+            'assets/img/stalls/P3-25.JPG',
+            'assets/img/stalls/P3-26.JPG',
+            'assets/img/stalls/P3-28.JPG',
+            'assets/img/stalls/P3-29.JPG',
+            'assets/img/stalls/P3-30.JPG',
+            'assets/img/stalls/P3-31.JPG',
+            'assets/img/stalls/P3-32.JPG',
+            'assets/img/stalls/P3-33.JPG',
+            'assets/img/stalls/P3-34.JPG',
+            'assets/img/stalls/P3-35.JPG',         
+        ];
+
+        const phaseFourImages = [
+            'assets/img/stalls/P4 ENTRY.jpg',
+            'assets/img/stalls/P4-1.JPG',
+            'assets/img/stalls/P4-2.JPG',
+            'assets/img/stalls/P4-3.JPG',
+            'assets/img/stalls/P4-4.JPG',
+            'assets/img/stalls/P4-5.JPG',
+            'assets/img/stalls/P4-6.JPG',
+            'assets/img/stalls/P4-7.JPG',
+            'assets/img/stalls/P4-8.JPG',
+            'assets/img/stalls/P4-9.JPG',
+            'assets/img/stalls/P4-10.JPG',
+            'assets/img/stalls/P4-11.JPG',
+            'assets/img/stalls/P4-12.JPG',
+            'assets/img/stalls/P4-13.JPG',
+            'assets/img/stalls/P4-14.JPG',
+            'assets/img/stalls/P4-15.JPG',
+            'assets/img/stalls/P4-16.JPG',
+            'assets/img/stalls/P4-17.JPG',
+            'assets/img/stalls/P4-18.JPG',
+            'assets/img/stalls/P4-19.JPG',
+            'assets/img/stalls/P4-20.JPG',
+            'assets/img/stalls/P4-21.JPG',
+            'assets/img/stalls/P4-22.JPG',
+            'assets/img/stalls/P4-23.JPG',
+            'assets/img/stalls/P4-24.JPG',
+            'assets/img/stalls/P4-25.JPG',
+            'assets/img/stalls/P4-26.JPG',
+            'assets/img/stalls/P4-27.JPG',
+            'assets/img/stalls/P4-28.JPG',
+            'assets/img/stalls/P4-29.JPG',
+            'assets/img/stalls/P4-30.JPG',
+            'assets/img/stalls/P4-31.JPG',
+            'assets/img/stalls/P4-32.JPG',
+        ];
+    
+        function getRandomPhaseOneImage() {
+            const randomPhaseOneIndex = Math.floor(Math.random() * phaseOneImages.length);
+            return phaseOneImages[randomPhaseOneIndex];
+        }
+
+        function getRandomPhaseTwoImage() {
+            const randomPhaseTwoIndex = Math.floor(Math.random() * phaseTwoImages.length);
+            return phaseTwoImages[randomPhaseTwoIndex];
+        }
+
+        function getRandomPhaseThreeImage() {
+            const randomPhaseThreeIndex = Math.floor(Math.random() * phaseThreeImages.length);
+            return phaseThreeImages[randomPhaseThreeIndex];
+        }
+
+        function getRandomPhaseFourImage() {
+            const randomPhaseFourIndex = Math.floor(Math.random() * phaseFourImages.length);
+            return phaseFourImages[randomPhaseFourIndex];
+        }
+    
+        document.getElementById('randomPhaseOneImage').src = getRandomPhaseOneImage();
+        document.getElementById('randomPhaseTwoImage').src = getRandomPhaseTwoImage();
+        document.getElementById('randomPhaseThreeImage').src = getRandomPhaseThreeImage();
+        document.getElementById('randomPhaseFourImage').src = getRandomPhaseFourImage();
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const targetElements = document.querySelectorAll('.animate-on-scroll');
+        
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+                );
+            }
+        
+            function handleScroll() {
+                targetElements.forEach(function(element) {
+                    if (isElementInViewport(element)) {
+                        if (element.classList.contains('fadeInUp-trigger')) {
+                            element.classList.add('fadeInUp-animation');
+                        } else if (element.classList.contains('fadeIn-trigger')) {
+                            element.classList.add('fadeIn-animation');
+                        }
+                        element.classList.remove('animate-on-scroll');
+                    }
+                });
+            }
+
+            window.addEventListener('load', function() {
+                let preloader = document.getElementById("preloader");
+        
+                let preloaderCheckInterval = setInterval(function() {
+                    if (preloader.style.display === "none") {
+                        clearInterval(preloaderCheckInterval);
+                        window.addEventListener('scroll', handleScroll);
+                        handleScroll();
+                    }
+                }, 100);
+            });
+        });        
+    </script>
+
+    <script>
+        function goToGetStarted() {
+            window.location.href = "get-started.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karuhatan Public Market</title>
+    <link href="assets/img/KPM Logo.png" rel="icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/about-us-style.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="preloaderBg" id="preloader">
+        <div class="preloader"></div>
+        <div class="preloader2"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="assets/img/Karuhatan Public Market Logo.png" alt="Karuhatan Public Market Logo" class="img-fluid" id="kpmLogo"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="#" onclick="window.location.reload(); return false;">Guide Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="updates.html">Updates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item" id="hidden-nav">
+                        <a class="nav-link nav-text" href="get-started.html">Get Started</a>
+                    </li>
+                    <li class="nav-item" id="hidden-nav">
+                        <a class="nav-link nav-text" href="log-in.html">Login</a>
+                    </li>
+                </ul>
+                <div class="d-flex" id="hidden-side-nav">
+                    <a href="get-started.html">
+                        <button class="btn nav-text ms-6">Get Started</button>
+                    </a>
+                    <a href="log-in.html">
+                        <button class="btn btn-signup ms-3">Login</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div lc-helper="background" class="container-fluid py-5 d-flex justify-content-center" style="background-image: url('assets/img/about-us-bg.png'); background-position: center; background-size:cover; background-repeat:no-repeat">
+        <div class="container-fluid px-4 custom-py-5 custom-my-5 col-12 text-center">
+            <h2 class="custom-display-7 switzer-extrabold-text-white animate-on-scroll fadeInUp-trigger">ABOUT US</h2>
+            <p class="custom-display-5 about-us-text animate-on-scroll fadeInUp-trigger">Welcome to Karuhatan's very own market!</p>
+        </div>
+    </div>
+
+    <div lc-helper="background" class="container-fluid py-5 justify-content-center" style="background-image: url('assets/img/gradient-bg-sm.png'); background-position: center; background-size:cover; background-repeat:no-repeat">
+        <div class="container-fluid px-4 custom-py-5 custom-my-5 col-12 text-center">
+            <h2 class="container-fluid display-3 switzer-bold-text py-whats-new custom-col-7 animate-on-scroll fadeInUp-trigger">Experience your Karuhatan Public Market</h2>
+            <p class="container-fluid display-0 switzer-medium-text py-whats-new custom-col-10 animate-on-scroll fadeInUp-trigger">Since its establishment, the Karuhatan Public Market have served as the central hub of community activity and commerce. It provides access to fresh produce, household goods, staples, and other items. Over the years, the market has evolved into a bustling marketplace, where a variety of vendors has been catered to come together to showcase their products.
+            <br><br>At Karuhatan Public Market, our mission is simple yet profound: to serve as a catalyst for economic growth, cultural exchange and community development. As we continue to grow and serve the needs of the community, we remain committed to preserve a welcoming environment for all. Join us at the Karuhatan Public Market, where every stall brims with quality goods and every visit is an opportunity to discover something new.</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="topic" id="accordion-phase-one">
+            <div class="open" id="open-phase-one">
+            <h2 class="question display-6 text-center">Phase One</h2>
+            <span class="faq-t"></span>
+            </div>
+            <div class="answer">
+                <div class="container swiper">
+                    <div class="slider-wrapper">
+                        <div class="card-list swiper-wrapper">
+                            <div class="card-item swiper-slide">
+                                <div class="image-wrapper">
+                                    <picture>
+                                        <source srcset="assets/img/webp/P1-3.webp" type="image/webp">
+                                        <img src="assets/img/stalls/P1-s2.jpg" alt="Stall" class="slide-image">
+                                    </picture>
+                                </div>                                
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 1</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/no-img-available.png" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 2</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P1-3.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 3</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P1-4.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 4</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P1-5.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 5</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P1-6.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 6</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P1-7.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 7</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P1-8.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 8</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P1-9.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 9</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P1-10.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 10</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P1-11.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 11</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P1-12.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 12</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P1-13.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 13</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P1-14.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 14</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P1-15.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 15</h2>
+                            </div>
+                        </div>
+            
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topic" id="accordion-phase-two">
+            <div class="open" id="open-phase-two">
+                <h2 class="question display-6 text-center">Phase Two</h2>
+                <span class="faq-t"></span>
+            </div>
+            <div class="answer">
+                <div class="container swiper">
+                    <div class="slider-wrapper">
+                        <div class="card-list swiper-wrapper">
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-1.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 1</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-2.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 2</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-3.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 3</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-4.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 4</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-5.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 5</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-6.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 6</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-7.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 7</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-8.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 8</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-9.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 9</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-10.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 10</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-11.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 11</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-12.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 12</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-13.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 13</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-14.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 14</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-15.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 15</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-16.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 16</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-17.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 17</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-18.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 18</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-19.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 19</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-20.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 20</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-21.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 21</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-22.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 22</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-23.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 23</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-24.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 24</h2>
+                            </div>
+                            <!-- <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-25.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 25</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-26.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 26</h2>
+                            </div> -->
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-27.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 27</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-28.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 28</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-29.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 29</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-30.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 30</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-31.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 31</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-32.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 32</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-33.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 33</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-34.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 34</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-35.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 35</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-36.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 36</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-37.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 37</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-38.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 38</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P2-39.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 39</h2>
+                            </div>
+                        </div>
+            
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topic" id="accordion-phase-three">
+            <div class="open" id="open-phase-three">
+            <h2 class="question display-6 text-center">Phase Three
+            </h2><span class="faq-t"></span>
+            </div>
+            <div class="answer">
+                <div class="container swiper">
+                    <div class="slider-wrapper">
+                        <div class="card-list swiper-wrapper">
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-1.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 1</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-2.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 2</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-3.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 3</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-4.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 4</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-5.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 5</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-6.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 6</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-7.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 7</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-8.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 8</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-9.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 9</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-10.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 10</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-11.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 11</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-12.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 12</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-13.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 13</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-14.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 14</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-15.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 15</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-16.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 16</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-17.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 17</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-18.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 18</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-19.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 19</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-20.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 20</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-21.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 21</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-22.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 22</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-23.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 23</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-24.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 24</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-25.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 25</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-26.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 26</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-27.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 27</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-28.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 28</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-29.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 29</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-30.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 30</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-31.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 31</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-32.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 32</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-33.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 33</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-34.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 34</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P3-35.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 35</h2>
+                            </div>
+                        </div>
+            
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topic" id="accordion-phase-four">
+            <div class="open" id="open-phase-four">
+                <h2 class="question display-6 text-center">Phase Four</h2>
+                <span class="faq-t"></span>
+            </div>
+            <div class="answer">
+                <div class="container swiper">
+                    <div class="slider-wrapper">
+                        <div class="card-list swiper-wrapper">
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-1.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 1</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-2.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 2</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-3.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 3</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-4.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 4</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-5.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 5</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-6.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 6</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-7.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 7</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-8.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 8</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-9.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 9</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-10.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 10</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-11.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 11</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-12.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 12</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-13.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 13</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-14.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 14</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-15.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 15</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-16.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 16</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-17.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 17</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-18.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 18</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-19.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 19</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-20.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 20</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-21.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 21</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-22.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 22</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-23.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 23</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-24.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 24</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-25.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 25</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-26.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 26</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-27.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 27</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-28.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 28</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-29.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 29</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-30.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 30</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-31.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 31</h2>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <img src="assets/img/stalls/P4-32.jpg" alt="Stall" class="slide-image">
+                                <h2 class="slide-title switzer-bold-text display-0">Stall 32</h2>
+                            </div>
+                        </div>
+            
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+
+    
+
+    <div lc-helper="background" class="container-fluid custom-py-6 d-flex justify-content-center" style="background-image: url('assets/img/visit-us-bg.png'); background-position: center; background-size:cover; background-repeat:no-repeat">
+        <div class="p-5 lc-block col-xxl-7 col-lg-8 col-12" style="background-color: white; border-radius: 12px;">
+            <div class="container py-1">
+                <div class="row flex-lg-row-reverse align-items-center">
+                    <div class="col-10 mx-auto col-sm-8 col-lg-6">
+                        <iframe class="d-block mx-lg-auto img-fluid-height" id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.3958132354655!2d120.97219567592742!3d14.690194474875153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b408b8a55555%3A0x7f13ddec4f32cfca!2sKaruhatan%20Market!5e0!3m2!1sen!2sph!4v1709296227512!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="display-3 switzer-bold-text custom-text-center animate-on-scroll fadeInUp-trigger">Visit Us</h2>
+                        <h3 class="display-6 switzer-semibold-text animate-on-scroll fadeInUp-trigger">Karuhatan Public Market</h3>
+                        <p class="display-0 switzer-medium-text animate-on-scroll fadeInUp-trigger">#8 Karuhatan Road, Karuhatan Valenzuela City, 1441</p><br>
+                        <h3 class="display-6 switzer-semibold-text animate-on-scroll fadeInUp-trigger">Market Hours</h3>
+                        <p class="display-0 switzer-medium-text pb-5 animate-on-scroll fadeInUp-trigger">Mon-Sun | 5:00 AM to 8:00 PM</p>
+                        <h3 class="display-6 switzer-semibold-text animate-on-scroll fadeInUp-trigger">Office Hours</h3>
+                        <p class="display-0 switzer-medium-text pb-5 animate-on-scroll fadeInUp-trigger">Mon-Sun | 5:00 AM to 6:00 PM</p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-start">
+                            <a href="#" onclick="window.location.reload(); return false;" class="btn-io switzer-semibold-text-white animate-on-scroll fadeIn-trigger" role="button">View Map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="text-center text-lg-start">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        </section>
+        <section>
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                <a href="home.html">
+                    <img src="assets/img/Karuhatan Public Market Logo.png" alt="Karuhatan Public Market Logo" class="img-fluid mb-3 footer-logo">
+                </a>
+                <p class="switzer-medium-text">Join us at the Karuhatan Public Market, where every stall offers quality goods and every visit is an opportunity to discover something new.</p>
+              </div>
+      
+              <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-4">
+                <a href="#" onclick="window.location.reload(); return false;" style="text-decoration: none"><h6 class="footer-text mb-4">Guide Map</h6></a>
+                <a href="updates.html" style="text-decoration: none"><h6 class="footer-text mb-4">Updates</h6></a>
+                <a href="about-us.html" style="text-decoration: none"><h6 class="footer-text mb-4">About Us</h6></a>
+              </div>
+
+              <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-4">
+                <a href="log-in.html" style="text-decoration: none"><h6 class="footer-text mb-4">Log in</h6></a>
+                <a href="get-started.html" style="text-decoration: none"><h6 class="footer-text mb-4">Get Started</h6></a>
+              </div>
+      
+              <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4">
+                <a href="privacy-policy.html" style="text-decoration: none"><h6 class="footer-text mb-4">Privacy Policy</h6></a>
+                <a href="terms-and-conditions.html" style="text-decoration: none"><h6 class="footer-text mb-4">Terms and Conditions</h6></a>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-4 mx-auto mb-md-0 mb-4">
+                    <h6 class="footer-text mb-4">Contact Us</h6>
+                    <p class="switzer-medium-text"><i class="fa-solid fa-location-dot me-3 custom-icon-color"></i>#8 Karuhatan Road, Karuhatan Valenzuela City, 1441</p>
+                    <p class="switzer-medium-text"><i class="fas fa-envelope me-3 custom-icon-color"></i>Karuhatanmarketoffice<span class="d-inline-block text-nowrap">@gmail.com</span></p>
+                    <p class="switzer-medium-text"><i class="fa-brands fa-square-facebook me-3 custom-icon-color"></i><a href="https://www.facebook.com/profile.php?id=100064155489242" target="_blank">Visit Us in Facebook</a></p>
+                </div>
+
+                <div class="col-md-4 mx-auto mb-md-0 mb-4">
+                    <p class="switzer-medium-text"><i class="fas fa-phone me-3 custom-icon-color"></i>Phase 1: 09205470553</p>
+                    <p class="switzer-medium-text"><i class="fas fa-phone me-3 custom-icon-color"></i>Phase 2: 09694252876</p>
+                    <p class="switzer-medium-text"><i class="fas fa-phone me-3 custom-icon-color"></i>Phase 3: 09694252876</p>
+                    <p class="switzer-medium-text"><i class="fas fa-phone me-3 custom-icon-color"></i>Phase 4: (02) 734-07624 / Globe: 09063900633 / Smart: 09087610222</p>
+                </div>
+
+                <div class="col-md-4 mx-auto mb-md-0 mb-4">
+                    <p class="footer-text"><i class="fa-solid fa-business-time me-3 custom-icon-color"></i>Office Hours:<br><span class="switzer-medium-text">Monday-Sunday 5:00AM to 6:00PM</span></p>
+                    <p class="footer-text"><i class="fa-solid fa-clock me-3 custom-icon-color"></i>Market Hours:<br><span class="switzer-medium-text">Monday-Sunday 5:00AM to 8:00PM</span></p>
+                </div>
+            </div>
+          </div>
+        </section>        
+      
+        <div class="text-center switzer-semibold-text-white p-4" style="background-color: #283891;">© 2024 Copyright:
+          <a class="switzer-semibold-text-white" href="#" style="text-decoration: none">Karuhatan Public Market</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/stall-carousel-slider.js"></script>
+    <script src="js/about-us.js"></script>
+    <script src="js/preloader.js"></script>
+    
+    <script>
+        document.querySelectorAll('picture').forEach(picture => {
+            const source = picture.querySelector('source');
+            const fallbackImg = picture.querySelector('img');
+    
+            fetch(source.srcset, { method: 'HEAD' })
+                .then(response => {
+                    if (!response.ok) {
+                        fallbackImg.src = fallbackImg.getAttribute('src');
+                        source.remove();
+                    }
+                })
+                .catch(() => {
+                    fallbackImg.src = fallbackImg.getAttribute('src');
+                    source.remove();
+                });
+    
+            fallbackImg.onerror = function () {
+                this.onerror = null; 
+                this.src = 'assets/img/no-img-available.png';
+            };
+        });
+    </script>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const targetElements = document.querySelectorAll('.animate-on-scroll');
+        
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+                );
+            }
+        
+            function handleScroll() {
+                targetElements.forEach(function(element) {
+                    if (isElementInViewport(element)) {
+                        if (element.classList.contains('fadeInUp-trigger')) {
+                            element.classList.add('fadeInUp-animation');
+                        } else if (element.classList.contains('fadeIn-trigger')) {
+                            element.classList.add('fadeIn-animation');
+                        }
+                        element.classList.remove('animate-on-scroll');
+                    }
+                });
+            }
+
+            window.addEventListener('load', function() {
+                let preloader = document.getElementById("preloader");
+        
+                let preloaderCheckInterval = setInterval(function() {
+                    if (preloader.style.display === "none") {
+                        clearInterval(preloaderCheckInterval);
+                        window.addEventListener('scroll', handleScroll);
+                        handleScroll();
+                    }
+                }, 100);
+            });
+        });        
+    </script>
+</body>
+</html>
